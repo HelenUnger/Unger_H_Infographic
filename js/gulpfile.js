@@ -1,7 +1,6 @@
 // import all of the required plugins / packages
 var gulp = require('gulp');
 var sass = require('gulp-sass');
-var imagemin = require('gulp-imagemin');
 var browserSync = require('browser-sync').create();
 
 // start writing your tasks

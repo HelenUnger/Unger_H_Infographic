@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    overflow: hidden;
+}
+
+.container{
+    width: 95vw;
+    height: 95vh;
+    overflow: hidden;
+    margin: 0 auto;
+    
+}
+
+.planet-container{
+display: flex;
+justify-content: center;
+}
+
+.big-planet{
+    width: 50%;
+    top: 150px;
+    position: absolute;
+}
+
+.mini-menu{
+    position: absolute;
+    bottom: 20px;
+    width: 90vw;
+}
+
+/* .big-planet{
+    width: 20%;
+    position: absolute;
+    top: 30%;
+    left: 150px;
+}
+
+.mini-menu{
+    width: 85vw;
+    position: absolute;
+    bottom: 10px;
+}
+
+.planet-container{
+    background-color: #222;
+    width: 98vw;
+    height: 90%;
+} */
