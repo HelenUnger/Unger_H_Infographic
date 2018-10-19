@@ -1,0 +1,23 @@
+{
+  "name": "unger_h_infographic",
+  "version": "1.0.0",
+  "description": "infographic homework",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HelenUnger/Unger_H_Infographic.git"
+  },
+  "author": "Helen Unger",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/HelenUnger/Unger_H_Infographic/issues"
+  },
+  "homepage": "https://github.com/HelenUnger/Unger_H_Infographic#readme",
+  "devDependencies": {
+    "gulp": "^4.0.0",
+    "gulp-sass": "^4.0.2"
+  }
+}
