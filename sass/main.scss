@@ -1,48 +1,116 @@
 *{
     margin: 0;
     overflow: hidden;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.hide{
+    display: none !important;
 }
 
 .container{
-    width: 95vw;
-    height: 95vh;
+    width: 100vw;
+    height: 100vh;
     overflow: hidden;
     margin: 0 auto;
-    
+    background-color: #395884;
+    background: radial-gradient(ellipse at center, #395884 0%,#00192d 100%);
 }
 
+
 .planet-container{
-display: flex;
-justify-content: center;
+    width: 100vw;
+    margin-bottom: 30px;
 }
 
 .big-planet{
-    width: 50%;
-    top: 150px;
-    position: absolute;
+    width: 60vw;
+    display: block;
+    margin: 0 auto;
 }
 
 .mini-menu{
     position: absolute;
     bottom: 20px;
-    width: 90vw;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 15vw;
 }
 
-/* .big-planet{
-    width: 20%;
-    position: absolute;
-    top: 30%;
-    left: 150px;
+.mini-planet{
+    height: 15vw;
+    grid-column: 2;
+    grid-row: 1;
+    margin: 0 auto;
 }
 
-.mini-menu{
-    width: 85vw;
-    position: absolute;
-    bottom: 10px;
+.arrow{
+    height: 15vw;
+    display: grid;
+    grid-template: inherit;
+    margin: 0 auto;
 }
 
-.planet-container{
-    background-color: #222;
-    width: 98vw;
-    height: 90%;
-} */
+.left{
+    grid-column: 1;
+    grid-row: 1; 
+}
+
+.right{
+    grid-column: 3;
+    grid-row: 1; 
+}
+
+h1, h2{
+    text-transform: uppercase;
+    font-size: 4em;
+    text-align: center;
+}
+
+h1{
+    font-size: 3em;
+    padding: 30px 0;
+}
+
+p{
+    padding-top: 10px;
+    text-align: left;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    li{
+        padding-top: 5px;
+        font-size: 1em;
+    }
+}
+
+.bold{
+    font-weight: bold;
+}
+
+.data{
+    font-weight: normal;
+}
+
+.info-box{
+    width: 75vw;
+    margin: 0 auto;
+}
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 1000px) {
+
+    
+}
