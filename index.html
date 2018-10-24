@@ -10,7 +10,9 @@
 <body>
     <section class="container">
         <h1>Mercury</h1>
-		<div class="planet-container">
+		<div class="planet-container" style="left: 0px;">
+
+        <div class="planet-box">
             <svg class="big-planet mercury" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 521 521">
                 <defs>
                     <style>
@@ -37,35 +39,136 @@
                     </g>
                 </g>
             </svg>
-            <svg class="big-planet neptune hide" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 521 521">
+        </div>
+            
+        <div class="planet-box">
+            <svg class="big-planet venus " xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 521 521">
                 <defs>
                     <style>
-                        .neptune-color {
-                            fill: url(#linear-gradient-neptune);
+                        .venus-color {
+                            fill: url(#radial-gradient-venus);
                         }
                     </style>
-                    <linearGradient id="linear-gradient-neptune" x1="260.5" x2="260.5" y2="521" gradientUnits="userSpaceOnUse">
-                        <stop offset="0" stop-color="#4c51ff"/>
-                        <stop offset="0.23" stop-color="#2699f4"/>
-                        <stop offset="0.49" stop-color="#00bee9"/>
-                        <stop offset="0.52" stop-color="#01b3e7"/>
-                        <stop offset="0.67" stop-color="#0884de"/>
-                        <stop offset="0.74" stop-color="#0a72db"/>
-                        <stop offset="0.76" stop-color="#0b77da"/>
-                        <stop offset="0.86" stop-color="#0e91d6"/>
-                        <stop offset="0.93" stop-color="#0f9ad4"/>
-                    </linearGradient>
+                    <radialGradient id="radial-gradient-venus" cx="260.5" cy="260.5" r="260.5" gradientUnits="userSpaceOnUse">
+                        <stop offset="0.05" stop-color="#ff8415"/>
+                        <stop offset="0.08" stop-color="#ff890a"/>
+                        <stop offset="0.12" stop-color="#ff8d02"/>
+                        <stop offset="0.2" stop-color="#ff8e00"/>
+                        <stop offset="0.21" stop-color="#ff8f02"/>
+                        <stop offset="0.3" stop-color="#ff9918"/>
+                        <stop offset="0.39" stop-color="#ff9f25"/>
+                        <stop offset="0.47" stop-color="#ffa12a"/>
+                        <stop offset="0.72" stop-color="#ffb815"/>
+                        <stop offset="0.85" stop-color="#f7ab0d"/>
+                        <stop offset="1" stop-color="#e99600"/>
+                    </radialGradient>
                 </defs>
-                <title>neptune</title>
+                <title>venus</title>
                 <g id="Layer_2" data-name="Layer 2">
-                    <g id="neptune">
-                        <g id="neptune-2" data-name="neptune">
-                            <circle class="neptune-color" cx="260.5" cy="260.5" r="260.5"/>
+                    <g id="venus">
+                        <g id="venus-2" data-name="venus">
+                            <circle class="venus-color" cx="260.5" cy="260.5" r="260.5"/>
                         </g>
                     </g>
                 </g>
             </svg>
-            <svg class="big-planet saturn hide" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 759.09 521">
+        </div>
+
+        <div class="planet-box">
+            <svg class="big-planet earth " xmlns="http://www.w3.org/2000/svg" viewBox="0 0 521 521">
+                <defs>
+                    <style>
+                        .earth-water-color {
+                            fill: #152296;
+                        }
+            
+                        .earth-land-color {
+                            fill: #0d9920;
+                        }
+                    </style>
+                </defs>
+                <title>earth</title>
+                <g id="Layer_2" data-name="Layer 2">
+                    <g id="earth">
+                        <g id="earth-2" data-name="earth">
+                            <circle class="earth-water-color" cx="260.5" cy="260.5" r="260.5"/>
+                        </g>
+                        <g id="earth_land" data-name="earth land">
+                            <path class="earth-land-color" d="M143.56,44.17c4.15-.48,4.94,6.33,2.09,9.39s-7.34,4.54-9.36,8.2c-1.84,3.34-1.06,7.43-1,11.24.28,16.75-14,30.57-16,47.2-1,7.87.9,15.8,3,23.45a399.49,399.49,0,0,0,21.35,59.57c3.79-.6,3.65-6.11,2.48-9.77l-9.72-30.35a84.18,84.18,0,0,1,26.93,47c.76,3.95,1.28,8.09,3.51,11.43s5.8,5.42,9.35,7.24a130,130,0,0,0,39.07,12.67c3.53.55,7.23,1,10.22,3,7.86,5.15,8.47,18.93,17.63,21.05,4.22,1,8.58-1.17,12.89-.8,11.92,1,16.33,19.34,28.24,20.43,5.61.52,11-3.21,16.61-2.42,9.83,1.38,12.4,15.09,8.68,24.29s-11.1,17-12.63,26.82c-1.37,8.79,2.22,17.55,6.18,25.52a242.59,242.59,0,0,0,27.69,43.46c4.52,5.65,9.5,11.58,10.28,18.78.94,8.8-4.63,16.84-9.92,23.94L291.41,498.6l41.12-15.34c4.21-1.57,8.58-3.24,11.68-6.5,3.68-3.87,5.13-9.53,9.05-13.16,7.11-6.6,18.64-3.79,27.79-7.05,8.91-3.18,14.59-11.73,19.63-19.74l15.46-24.62c15.69-25,31.5-50.19,41.78-77.86,1.32-3.54,2.48-7.73.41-10.89-3.86-5.87-13.68-1.91-19.6-5.67-4.5-2.86-5.18-9-6.8-14.06-4.86-15.22-20.64-24-35.64-29.48a216.19,216.19,0,0,0-49.14-11.79c-6.78-.8-14.13-1.17-20,2.4-3.51,2.15-6.13,5.54-9.66,7.66-6.44,3.87-14.57,2.85-22,1.71-5.23-.81-11.14-2.06-13.85-6.62-4.41-7.44,2.48-19.25-4.21-24.73-4.39-3.58-11.11-1.08-16.46-2.92-8.67-3-7.39-18.56,1.64-20.09,1.43-5.09-4.45-9.8-9.72-9.39s-9.66,4-13.72,7.43-8.61,6.89-13.9,7c-4.29,0-8.32-2.26-11.4-5.25a26.77,26.77,0,0,1,16.49-45.87c4-.32,8.12.25,12-.78,8.78-2.32,15.56-12.4,24.43-10.51,14.19,3,9.73,30.32,23.85,33.67,6.47-4,4.2-13.92.66-20.67s-7.46-15.51-2.46-21.26c3.9-4.51,11.82-4.74,14.37-10.13,2.09-4.43-.78-9.52-1-14.42-.29-7,5.11-13.14,11.46-16s13.54-3,20.5-3.21c-1.58-4.58,1.48-9.71,5.68-12.13s9.22-2.78,14.05-3.08a38.79,38.79,0,0,1-24.14-17.11c4.44,5,13.18-2.68,11.22-9.08s-9-9.52-15.39-11.61c-9.16-3-19.89-5.29-27.88.09a49.64,49.64,0,0,0-24.37-17.92A28.72,28.72,0,0,0,276.11,64c-15.63,6-35.05-.43-44-14.55a16.66,16.66,0,0,0,18.06-7.88,37.51,37.51,0,0,1-30.72-13,347.68,347.68,0,0,0-74.91,8.5Z"/>
+                        </g>
+                    </g>
+                </g>
+            </svg>
+        </div>
+
+        <div class="planet-box">
+            <svg class="big-planet mars " xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 521 521">
+                <defs>
+                    <style>
+                        .mars-color {
+                            fill: url(#linear-gradient-mars);
+                        }
+                    </style>
+                    <linearGradient id="linear-gradient-mars" x1="260.5" x2="260.5" y2="521" gradientUnits="userSpaceOnUse">
+                        <stop offset="0.05" stop-color="#ff8415"/>
+                        <stop offset="0.14" stop-color="#ff752a"/>
+                        <stop offset="0.28" stop-color="#ff3615"/>
+                        <stop offset="0.32" stop-color="#ff4318"/>
+                        <stop offset="0.41" stop-color="#ff661f"/>
+                        <stop offset="0.45" stop-color="#ff7a23"/>
+                        <stop offset="0.58" stop-color="#fa5614"/>
+                        <stop offset="0.66" stop-color="#f7450d"/>
+                        <stop offset="0.78" stop-color="#f17b07"/>
+                        <stop offset="0.87" stop-color="#e9b500"/>
+                        <stop offset="1" stop-color="#f6520c"/>
+                    </linearGradient>
+                </defs>
+                <title>mars</title>
+                <g id="Layer_2" data-name="Layer 2">
+                    <g id="mars">
+                        <g id="mars-2" data-name="mars">
+                            <circle class="mars-color" cx="260.5" cy="260.5" r="260.5"/>
+                        </g>
+                    </g>
+                </g>
+            </svg>
+        </div>
+
+        <div class="planet-box">
+            <svg class="big-planet jupiter " xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 521 521">
+                <defs>
+                    <style>
+                        .jupiter-color {
+                            fill: url(#linear-gradient-jupiter);
+                        }
+                    </style>
+                    <linearGradient id="linear-gradient-jupiter" x1="260.5" x2="260.5" y2="521" gradientUnits="userSpaceOnUse">
+                        <stop offset="0.05" stop-color="#cc8429"/>
+                        <stop offset="0.11" stop-color="#b16a15"/>
+                        <stop offset="0.18" stop-color="#944e00"/>
+                        <stop offset="0.27" stop-color="#a14c00"/>
+                        <stop offset="0.31" stop-color="#aa4b00"/>
+                        <stop offset="0.39" stop-color="#b45900"/>
+                        <stop offset="0.51" stop-color="#bf6a00"/>
+                        <stop offset="0.7" stop-color="#a2450d"/>
+                        <stop offset="0.78" stop-color="#bf5a00"/>
+                        <stop offset="0.87" stop-color="#bf7400"/>
+                        <stop offset="1" stop-color="#945300"/>
+                    </linearGradient>
+                </defs>
+                <title>jupiter</title>
+                <g id="Layer_2" data-name="Layer 2">
+                    <g id="jupiter">
+                        <g id="jupiter-2" data-name="jupiter">
+                            <circle class="jupiter-color" cx="260.5" cy="260.5" r="260.5"/>
+                        </g>
+                    </g>
+                </g>
+            </svg>
+        </div>
+
+        <div class="planet-box">
+            <svg class="big-planet saturn " xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 759.09 521">
                 <defs>
                     <style>
                         .saturn-color {
@@ -106,8 +209,11 @@
                         <path class="saturn2-color" d="M565.54,81.51S852-48.75,725.2,104.2C615.11,237,392.43,367.22,150.42,468.06c-214.51,89.38-176,19.75-18.91-117.23.85-.73,10.92,23.53,8.4,22.69,0,0-137.39,110.51,24.79,39.92,115.68-50.35,351-175.72,482.35-289.91,96.63-84-58-14.29-58-14.29C582.34,100,574.78,89.91,565.54,81.51Z"/>
                     </g>
                 </g>
-            </svg>
-            <svg class="big-planet uranus hide" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 521 521">
+        </svg>
+        </div>
+
+        <div class="planet-box">
+            <svg class="big-planet uranus " xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 521 521">
                 <defs>
                     <style>
                         .uranus-color {
@@ -131,123 +237,54 @@
                     </g>
                 </g>
             </svg>
-            <svg class="big-planet venus hide" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 521 521">
+        </div>     
+
+        <div class="planet-box">
+            <svg class="big-planet neptune " xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 521 521">
                 <defs>
                     <style>
-                        .venus-color {
-                            fill: url(#radial-gradient-venus);
+                        .neptune-color {
+                            fill: url(#linear-gradient-neptune);
                         }
                     </style>
-                    <radialGradient id="radial-gradient-venus" cx="260.5" cy="260.5" r="260.5" gradientUnits="userSpaceOnUse">
-                        <stop offset="0.05" stop-color="#ff8415"/>
-                        <stop offset="0.08" stop-color="#ff890a"/>
-                        <stop offset="0.12" stop-color="#ff8d02"/>
-                        <stop offset="0.2" stop-color="#ff8e00"/>
-                        <stop offset="0.21" stop-color="#ff8f02"/>
-                        <stop offset="0.3" stop-color="#ff9918"/>
-                        <stop offset="0.39" stop-color="#ff9f25"/>
-                        <stop offset="0.47" stop-color="#ffa12a"/>
-                        <stop offset="0.72" stop-color="#ffb815"/>
-                        <stop offset="0.85" stop-color="#f7ab0d"/>
-                        <stop offset="1" stop-color="#e99600"/>
-                    </radialGradient>
-                </defs>
-                <title>venus</title>
-                <g id="Layer_2" data-name="Layer 2">
-                    <g id="venus">
-                        <g id="venus-2" data-name="venus">
-                            <circle class="venus-color" cx="260.5" cy="260.5" r="260.5"/>
-                        </g>
-                    </g>
-                </g>
-            </svg>
-            <svg class="big-planet earth hide" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 521 521">
-                <defs>
-                    <style>
-                        .earth-water-color {
-                            fill: #152296;
-                        }
-            
-                        .earth-land-color {
-                            fill: #0d9920;
-                        }
-                    </style>
-                </defs>
-                <title>earth</title>
-                <g id="Layer_2" data-name="Layer 2">
-                    <g id="earth">
-                        <g id="earth-2" data-name="earth">
-                            <circle class="earth-water-color" cx="260.5" cy="260.5" r="260.5"/>
-                        </g>
-                        <g id="earth_land" data-name="earth land">
-                            <path class="earth-land-color" d="M143.56,44.17c4.15-.48,4.94,6.33,2.09,9.39s-7.34,4.54-9.36,8.2c-1.84,3.34-1.06,7.43-1,11.24.28,16.75-14,30.57-16,47.2-1,7.87.9,15.8,3,23.45a399.49,399.49,0,0,0,21.35,59.57c3.79-.6,3.65-6.11,2.48-9.77l-9.72-30.35a84.18,84.18,0,0,1,26.93,47c.76,3.95,1.28,8.09,3.51,11.43s5.8,5.42,9.35,7.24a130,130,0,0,0,39.07,12.67c3.53.55,7.23,1,10.22,3,7.86,5.15,8.47,18.93,17.63,21.05,4.22,1,8.58-1.17,12.89-.8,11.92,1,16.33,19.34,28.24,20.43,5.61.52,11-3.21,16.61-2.42,9.83,1.38,12.4,15.09,8.68,24.29s-11.1,17-12.63,26.82c-1.37,8.79,2.22,17.55,6.18,25.52a242.59,242.59,0,0,0,27.69,43.46c4.52,5.65,9.5,11.58,10.28,18.78.94,8.8-4.63,16.84-9.92,23.94L291.41,498.6l41.12-15.34c4.21-1.57,8.58-3.24,11.68-6.5,3.68-3.87,5.13-9.53,9.05-13.16,7.11-6.6,18.64-3.79,27.79-7.05,8.91-3.18,14.59-11.73,19.63-19.74l15.46-24.62c15.69-25,31.5-50.19,41.78-77.86,1.32-3.54,2.48-7.73.41-10.89-3.86-5.87-13.68-1.91-19.6-5.67-4.5-2.86-5.18-9-6.8-14.06-4.86-15.22-20.64-24-35.64-29.48a216.19,216.19,0,0,0-49.14-11.79c-6.78-.8-14.13-1.17-20,2.4-3.51,2.15-6.13,5.54-9.66,7.66-6.44,3.87-14.57,2.85-22,1.71-5.23-.81-11.14-2.06-13.85-6.62-4.41-7.44,2.48-19.25-4.21-24.73-4.39-3.58-11.11-1.08-16.46-2.92-8.67-3-7.39-18.56,1.64-20.09,1.43-5.09-4.45-9.8-9.72-9.39s-9.66,4-13.72,7.43-8.61,6.89-13.9,7c-4.29,0-8.32-2.26-11.4-5.25a26.77,26.77,0,0,1,16.49-45.87c4-.32,8.12.25,12-.78,8.78-2.32,15.56-12.4,24.43-10.51,14.19,3,9.73,30.32,23.85,33.67,6.47-4,4.2-13.92.66-20.67s-7.46-15.51-2.46-21.26c3.9-4.51,11.82-4.74,14.37-10.13,2.09-4.43-.78-9.52-1-14.42-.29-7,5.11-13.14,11.46-16s13.54-3,20.5-3.21c-1.58-4.58,1.48-9.71,5.68-12.13s9.22-2.78,14.05-3.08a38.79,38.79,0,0,1-24.14-17.11c4.44,5,13.18-2.68,11.22-9.08s-9-9.52-15.39-11.61c-9.16-3-19.89-5.29-27.88.09a49.64,49.64,0,0,0-24.37-17.92A28.72,28.72,0,0,0,276.11,64c-15.63,6-35.05-.43-44-14.55a16.66,16.66,0,0,0,18.06-7.88,37.51,37.51,0,0,1-30.72-13,347.68,347.68,0,0,0-74.91,8.5Z"/>
-                        </g>
-                    </g>
-                </g>
-            </svg>
-            <svg class="big-planet jupiter hide" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 521 521">
-                <defs>
-                    <style>
-                        .jupiter-color {
-                            fill: url(#linear-gradient-jupiter);
-                        }
-                    </style>
-                    <linearGradient id="linear-gradient-jupiter" x1="260.5" x2="260.5" y2="521" gradientUnits="userSpaceOnUse">
-                        <stop offset="0.05" stop-color="#cc8429"/>
-                        <stop offset="0.11" stop-color="#b16a15"/>
-                        <stop offset="0.18" stop-color="#944e00"/>
-                        <stop offset="0.27" stop-color="#a14c00"/>
-                        <stop offset="0.31" stop-color="#aa4b00"/>
-                        <stop offset="0.39" stop-color="#b45900"/>
-                        <stop offset="0.51" stop-color="#bf6a00"/>
-                        <stop offset="0.7" stop-color="#a2450d"/>
-                        <stop offset="0.78" stop-color="#bf5a00"/>
-                        <stop offset="0.87" stop-color="#bf7400"/>
-                        <stop offset="1" stop-color="#945300"/>
+                    <linearGradient id="linear-gradient-neptune" x1="260.5" x2="260.5" y2="521" gradientUnits="userSpaceOnUse">
+                        <stop offset="0" stop-color="#4c51ff"/>
+                        <stop offset="0.23" stop-color="#2699f4"/>
+                        <stop offset="0.49" stop-color="#00bee9"/>
+                        <stop offset="0.52" stop-color="#01b3e7"/>
+                        <stop offset="0.67" stop-color="#0884de"/>
+                        <stop offset="0.74" stop-color="#0a72db"/>
+                        <stop offset="0.76" stop-color="#0b77da"/>
+                        <stop offset="0.86" stop-color="#0e91d6"/>
+                        <stop offset="0.93" stop-color="#0f9ad4"/>
                     </linearGradient>
                 </defs>
-                <title>jupiter</title>
+                <title>neptune</title>
                 <g id="Layer_2" data-name="Layer 2">
-                    <g id="jupiter">
-                        <g id="jupiter-2" data-name="jupiter">
-                            <circle class="jupiter-color" cx="260.5" cy="260.5" r="260.5"/>
-                        </g>
-                    </g>
-                </g>
-            </svg>
-            <svg class="big-planet mars hide" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 521 521">
-                <defs>
-                    <style>
-                        .mars-color {
-                            fill: url(#linear-gradient-mars);
-                        }
-                    </style>
-                    <linearGradient id="linear-gradient-mars" x1="260.5" x2="260.5" y2="521" gradientUnits="userSpaceOnUse">
-                        <stop offset="0.05" stop-color="#ff8415"/>
-                        <stop offset="0.14" stop-color="#ff752a"/>
-                        <stop offset="0.28" stop-color="#ff3615"/>
-                        <stop offset="0.32" stop-color="#ff4318"/>
-                        <stop offset="0.41" stop-color="#ff661f"/>
-                        <stop offset="0.45" stop-color="#ff7a23"/>
-                        <stop offset="0.58" stop-color="#fa5614"/>
-                        <stop offset="0.66" stop-color="#f7450d"/>
-                        <stop offset="0.78" stop-color="#f17b07"/>
-                        <stop offset="0.87" stop-color="#e9b500"/>
-                        <stop offset="1" stop-color="#f6520c"/>
-                    </linearGradient>
-                </defs>
-                <title>mars</title>
-                <g id="Layer_2" data-name="Layer 2">
-                    <g id="mars">
-                        <g id="mars-2" data-name="mars">
-                            <circle class="mars-color" cx="260.5" cy="260.5" r="260.5"/>
+                    <g id="neptune">
+                        <g id="neptune-2" data-name="neptune">
+                            <circle class="neptune-color" cx="260.5" cy="260.5" r="260.5"/>
                         </g>
                     </g>
                 </g>
             </svg> 
         </div>
+
+        </div>
         
-        
+
+
+
+
+
+
+
+
+
+
+
+
+
         <div class="info-box">
             <ul>
                 <li class="bold">Year discovered:   <span class="data">2005</span></li>
@@ -282,7 +319,7 @@
 
 
         <div class="mini-menu">
-                <svg class="arrow left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 212.31 310.58">
+            <svg class="arrow left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 212.31 310.58">
                     <defs>
                       <style>
                         .arrow-color {
@@ -296,9 +333,9 @@
                         <path id="left" data-name="left" class="arrow-color" d="M212.31,253.8A15.07,15.07,0,0,0,208,243.05L120.2,155.29,208,67.54a14.88,14.88,0,0,0,0-21.05L165.82,4.36a14.9,14.9,0,0,0-21.06,0L4.36,144.76a14.9,14.9,0,0,0,0,21.06l140.4,140.4a14.9,14.9,0,0,0,21.06,0L208,264.09a15.07,15.07,0,0,0,4.36-10.29Z"/>
                       </g>
                     </g>
-                  </svg>
+            </svg>
 
-            <svg class="mini-planet mercury" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 521 521">
+            <svg class="mini-planet mercury" data-offset="0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 521 521">
                 <defs>
                     <style>
                         .mercury-color {
@@ -324,35 +361,133 @@
                     </g>
                 </g>
             </svg>
-            <svg class="mini-planet neptune hide" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 521 521">
+
+            
+            <svg class="mini-planet venus mini-hide" data-offset="1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 521 521">
                 <defs>
                     <style>
-                        .neptune-color {
-                            fill: url(#linear-gradient-neptune);
+                        .venus-color {
+                            fill: url(#radial-gradient-venus);
                         }
                     </style>
-                    <linearGradient id="linear-gradient-neptune" x1="260.5" x2="260.5" y2="521" gradientUnits="userSpaceOnUse">
-                        <stop offset="0" stop-color="#4c51ff"/>
-                        <stop offset="0.23" stop-color="#2699f4"/>
-                        <stop offset="0.49" stop-color="#00bee9"/>
-                        <stop offset="0.52" stop-color="#01b3e7"/>
-                        <stop offset="0.67" stop-color="#0884de"/>
-                        <stop offset="0.74" stop-color="#0a72db"/>
-                        <stop offset="0.76" stop-color="#0b77da"/>
-                        <stop offset="0.86" stop-color="#0e91d6"/>
-                        <stop offset="0.93" stop-color="#0f9ad4"/>
-                    </linearGradient>
+                    <radialGradient id="radial-gradient-venus" cx="260.5" cy="260.5" r="260.5" gradientUnits="userSpaceOnUse">
+                        <stop offset="0.05" stop-color="#ff8415"/>
+                        <stop offset="0.08" stop-color="#ff890a"/>
+                        <stop offset="0.12" stop-color="#ff8d02"/>
+                        <stop offset="0.2" stop-color="#ff8e00"/>
+                        <stop offset="0.21" stop-color="#ff8f02"/>
+                        <stop offset="0.3" stop-color="#ff9918"/>
+                        <stop offset="0.39" stop-color="#ff9f25"/>
+                        <stop offset="0.47" stop-color="#ffa12a"/>
+                        <stop offset="0.72" stop-color="#ffb815"/>
+                        <stop offset="0.85" stop-color="#f7ab0d"/>
+                        <stop offset="1" stop-color="#e99600"/>
+                    </radialGradient>
                 </defs>
-                <title>neptune</title>
+                <title>venus</title>
                 <g id="Layer_2" data-name="Layer 2">
-                    <g id="neptune">
-                        <g id="neptune-2" data-name="neptune">
-                            <circle class="neptune-color" cx="260.5" cy="260.5" r="260.5"/>
+                    <g id="venus">
+                        <g id="venus-2" data-name="venus">
+                            <circle class="venus-color" cx="260.5" cy="260.5" r="260.5"/>
                         </g>
                     </g>
                 </g>
             </svg>
-            <svg class="mini-planet saturn hide" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 759.09 521">
+
+
+            <svg class="mini-planet earth mini-hide" data-offset="2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 521 521">
+                <defs>
+                    <style>
+                        .earth-water-color {
+                            fill: #152296;
+                        }
+            
+                        .earth-land-color {
+                            fill: #0d9920;
+                        }
+                    </style>
+                </defs>
+                <title>earth</title>
+                <g id="Layer_2" data-name="Layer 2">
+                    <g id="earth">
+                        <g id="earth-2" data-name="earth">
+                            <circle class="earth-water-color" cx="260.5" cy="260.5" r="260.5"/>
+                        </g>
+                        <g id="earth_land" data-name="earth land">
+                            <path class="earth-land-color" d="M143.56,44.17c4.15-.48,4.94,6.33,2.09,9.39s-7.34,4.54-9.36,8.2c-1.84,3.34-1.06,7.43-1,11.24.28,16.75-14,30.57-16,47.2-1,7.87.9,15.8,3,23.45a399.49,399.49,0,0,0,21.35,59.57c3.79-.6,3.65-6.11,2.48-9.77l-9.72-30.35a84.18,84.18,0,0,1,26.93,47c.76,3.95,1.28,8.09,3.51,11.43s5.8,5.42,9.35,7.24a130,130,0,0,0,39.07,12.67c3.53.55,7.23,1,10.22,3,7.86,5.15,8.47,18.93,17.63,21.05,4.22,1,8.58-1.17,12.89-.8,11.92,1,16.33,19.34,28.24,20.43,5.61.52,11-3.21,16.61-2.42,9.83,1.38,12.4,15.09,8.68,24.29s-11.1,17-12.63,26.82c-1.37,8.79,2.22,17.55,6.18,25.52a242.59,242.59,0,0,0,27.69,43.46c4.52,5.65,9.5,11.58,10.28,18.78.94,8.8-4.63,16.84-9.92,23.94L291.41,498.6l41.12-15.34c4.21-1.57,8.58-3.24,11.68-6.5,3.68-3.87,5.13-9.53,9.05-13.16,7.11-6.6,18.64-3.79,27.79-7.05,8.91-3.18,14.59-11.73,19.63-19.74l15.46-24.62c15.69-25,31.5-50.19,41.78-77.86,1.32-3.54,2.48-7.73.41-10.89-3.86-5.87-13.68-1.91-19.6-5.67-4.5-2.86-5.18-9-6.8-14.06-4.86-15.22-20.64-24-35.64-29.48a216.19,216.19,0,0,0-49.14-11.79c-6.78-.8-14.13-1.17-20,2.4-3.51,2.15-6.13,5.54-9.66,7.66-6.44,3.87-14.57,2.85-22,1.71-5.23-.81-11.14-2.06-13.85-6.62-4.41-7.44,2.48-19.25-4.21-24.73-4.39-3.58-11.11-1.08-16.46-2.92-8.67-3-7.39-18.56,1.64-20.09,1.43-5.09-4.45-9.8-9.72-9.39s-9.66,4-13.72,7.43-8.61,6.89-13.9,7c-4.29,0-8.32-2.26-11.4-5.25a26.77,26.77,0,0,1,16.49-45.87c4-.32,8.12.25,12-.78,8.78-2.32,15.56-12.4,24.43-10.51,14.19,3,9.73,30.32,23.85,33.67,6.47-4,4.2-13.92.66-20.67s-7.46-15.51-2.46-21.26c3.9-4.51,11.82-4.74,14.37-10.13,2.09-4.43-.78-9.52-1-14.42-.29-7,5.11-13.14,11.46-16s13.54-3,20.5-3.21c-1.58-4.58,1.48-9.71,5.68-12.13s9.22-2.78,14.05-3.08a38.79,38.79,0,0,1-24.14-17.11c4.44,5,13.18-2.68,11.22-9.08s-9-9.52-15.39-11.61c-9.16-3-19.89-5.29-27.88.09a49.64,49.64,0,0,0-24.37-17.92A28.72,28.72,0,0,0,276.11,64c-15.63,6-35.05-.43-44-14.55a16.66,16.66,0,0,0,18.06-7.88,37.51,37.51,0,0,1-30.72-13,347.68,347.68,0,0,0-74.91,8.5Z"/>
+                        </g>
+                    </g>
+                </g>
+            </svg>
+            
+
+
+            <svg class="mini-planet mars mini-hide" data-offset="3" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 521 521">
+                <defs>
+                    <style>
+                        .mars-color {
+                            fill: url(#linear-gradient-mars);
+                        }
+                    </style>
+                    <linearGradient id="linear-gradient-mars" x1="260.5" x2="260.5" y2="521" gradientUnits="userSpaceOnUse">
+                        <stop offset="0.05" stop-color="#ff8415"/>
+                        <stop offset="0.14" stop-color="#ff752a"/>
+                        <stop offset="0.28" stop-color="#ff3615"/>
+                        <stop offset="0.32" stop-color="#ff4318"/>
+                        <stop offset="0.41" stop-color="#ff661f"/>
+                        <stop offset="0.45" stop-color="#ff7a23"/>
+                        <stop offset="0.58" stop-color="#fa5614"/>
+                        <stop offset="0.66" stop-color="#f7450d"/>
+                        <stop offset="0.78" stop-color="#f17b07"/>
+                        <stop offset="0.87" stop-color="#e9b500"/>
+                        <stop offset="1" stop-color="#f6520c"/>
+                    </linearGradient>
+                </defs>
+                <title>mars</title>
+                <g id="Layer_2" data-name="Layer 2">
+                    <g id="mars">
+                        <g id="mars-2" data-name="mars">
+                            <circle class="mars-color" cx="260.5" cy="260.5" r="260.5"/>
+                        </g>
+                    </g>
+                </g>
+            </svg>
+
+
+            <svg class="mini-planet jupiter mini-hide" data-offset="4" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 521 521">
+                <defs>
+                    <style>
+                        .jupiter-color {
+                            fill: url(#linear-gradient-jupiter);
+                        }
+                    </style>
+                    <linearGradient id="linear-gradient-jupiter" x1="260.5" x2="260.5" y2="521" gradientUnits="userSpaceOnUse">
+                        <stop offset="0.05" stop-color="#cc8429"/>
+                        <stop offset="0.11" stop-color="#b16a15"/>
+                        <stop offset="0.18" stop-color="#944e00"/>
+                        <stop offset="0.27" stop-color="#a14c00"/>
+                        <stop offset="0.31" stop-color="#aa4b00"/>
+                        <stop offset="0.39" stop-color="#b45900"/>
+                        <stop offset="0.51" stop-color="#bf6a00"/>
+                        <stop offset="0.7" stop-color="#a2450d"/>
+                        <stop offset="0.78" stop-color="#bf5a00"/>
+                        <stop offset="0.87" stop-color="#bf7400"/>
+                        <stop offset="1" stop-color="#945300"/>
+                    </linearGradient>
+                </defs>
+                <title>jupiter</title>
+                <g id="Layer_2" data-name="Layer 2">
+                    <g id="jupiter">
+                        <g id="jupiter-2" data-name="jupiter">
+                            <circle class="jupiter-color" cx="260.5" cy="260.5" r="260.5"/>
+                        </g>
+                    </g>
+                </g>
+            </svg>
+
+
+
+            <svg class="mini-planet saturn mini-hide" data-offset="5" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 759.09 521">
                 <defs>
                     <style>
                         .saturn-color {
@@ -394,7 +529,11 @@
                     </g>
                 </g>
             </svg>
-            <svg class="mini-planet uranus hide" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 521 521">
+
+
+
+
+            <svg class="mini-planet uranus mini-hide" data-offset="6" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 521 521">
                 <defs>
                     <style>
                         .uranus-color {
@@ -418,120 +557,40 @@
                     </g>
                 </g>
             </svg>
-            <svg class="mini-planet venus hide" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 521 521">
+
+
+
+
+            <svg class="mini-planet neptune mini-hide" data-offset="7" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 521 521">
                 <defs>
                     <style>
-                        .venus-color {
-                            fill: url(#radial-gradient-venus);
+                        .neptune-color {
+                            fill: url(#linear-gradient-neptune);
                         }
                     </style>
-                    <radialGradient id="radial-gradient-venus" cx="260.5" cy="260.5" r="260.5" gradientUnits="userSpaceOnUse">
-                        <stop offset="0.05" stop-color="#ff8415"/>
-                        <stop offset="0.08" stop-color="#ff890a"/>
-                        <stop offset="0.12" stop-color="#ff8d02"/>
-                        <stop offset="0.2" stop-color="#ff8e00"/>
-                        <stop offset="0.21" stop-color="#ff8f02"/>
-                        <stop offset="0.3" stop-color="#ff9918"/>
-                        <stop offset="0.39" stop-color="#ff9f25"/>
-                        <stop offset="0.47" stop-color="#ffa12a"/>
-                        <stop offset="0.72" stop-color="#ffb815"/>
-                        <stop offset="0.85" stop-color="#f7ab0d"/>
-                        <stop offset="1" stop-color="#e99600"/>
-                    </radialGradient>
-                </defs>
-                <title>venus</title>
-                <g id="Layer_2" data-name="Layer 2">
-                    <g id="venus">
-                        <g id="venus-2" data-name="venus">
-                            <circle class="venus-color" cx="260.5" cy="260.5" r="260.5"/>
-                        </g>
-                    </g>
-                </g>
-            </svg>
-            <svg class="mini-planet earth hide" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 521 521">
-                <defs>
-                    <style>
-                        .earth-water-color {
-                            fill: #152296;
-                        }
-            
-                        .earth-land-color {
-                            fill: #0d9920;
-                        }
-                    </style>
-                </defs>
-                <title>earth</title>
-                <g id="Layer_2" data-name="Layer 2">
-                    <g id="earth">
-                        <g id="earth-2" data-name="earth">
-                            <circle class="earth-water-color" cx="260.5" cy="260.5" r="260.5"/>
-                        </g>
-                        <g id="earth_land" data-name="earth land">
-                            <path class="earth-land-color" d="M143.56,44.17c4.15-.48,4.94,6.33,2.09,9.39s-7.34,4.54-9.36,8.2c-1.84,3.34-1.06,7.43-1,11.24.28,16.75-14,30.57-16,47.2-1,7.87.9,15.8,3,23.45a399.49,399.49,0,0,0,21.35,59.57c3.79-.6,3.65-6.11,2.48-9.77l-9.72-30.35a84.18,84.18,0,0,1,26.93,47c.76,3.95,1.28,8.09,3.51,11.43s5.8,5.42,9.35,7.24a130,130,0,0,0,39.07,12.67c3.53.55,7.23,1,10.22,3,7.86,5.15,8.47,18.93,17.63,21.05,4.22,1,8.58-1.17,12.89-.8,11.92,1,16.33,19.34,28.24,20.43,5.61.52,11-3.21,16.61-2.42,9.83,1.38,12.4,15.09,8.68,24.29s-11.1,17-12.63,26.82c-1.37,8.79,2.22,17.55,6.18,25.52a242.59,242.59,0,0,0,27.69,43.46c4.52,5.65,9.5,11.58,10.28,18.78.94,8.8-4.63,16.84-9.92,23.94L291.41,498.6l41.12-15.34c4.21-1.57,8.58-3.24,11.68-6.5,3.68-3.87,5.13-9.53,9.05-13.16,7.11-6.6,18.64-3.79,27.79-7.05,8.91-3.18,14.59-11.73,19.63-19.74l15.46-24.62c15.69-25,31.5-50.19,41.78-77.86,1.32-3.54,2.48-7.73.41-10.89-3.86-5.87-13.68-1.91-19.6-5.67-4.5-2.86-5.18-9-6.8-14.06-4.86-15.22-20.64-24-35.64-29.48a216.19,216.19,0,0,0-49.14-11.79c-6.78-.8-14.13-1.17-20,2.4-3.51,2.15-6.13,5.54-9.66,7.66-6.44,3.87-14.57,2.85-22,1.71-5.23-.81-11.14-2.06-13.85-6.62-4.41-7.44,2.48-19.25-4.21-24.73-4.39-3.58-11.11-1.08-16.46-2.92-8.67-3-7.39-18.56,1.64-20.09,1.43-5.09-4.45-9.8-9.72-9.39s-9.66,4-13.72,7.43-8.61,6.89-13.9,7c-4.29,0-8.32-2.26-11.4-5.25a26.77,26.77,0,0,1,16.49-45.87c4-.32,8.12.25,12-.78,8.78-2.32,15.56-12.4,24.43-10.51,14.19,3,9.73,30.32,23.85,33.67,6.47-4,4.2-13.92.66-20.67s-7.46-15.51-2.46-21.26c3.9-4.51,11.82-4.74,14.37-10.13,2.09-4.43-.78-9.52-1-14.42-.29-7,5.11-13.14,11.46-16s13.54-3,20.5-3.21c-1.58-4.58,1.48-9.71,5.68-12.13s9.22-2.78,14.05-3.08a38.79,38.79,0,0,1-24.14-17.11c4.44,5,13.18-2.68,11.22-9.08s-9-9.52-15.39-11.61c-9.16-3-19.89-5.29-27.88.09a49.64,49.64,0,0,0-24.37-17.92A28.72,28.72,0,0,0,276.11,64c-15.63,6-35.05-.43-44-14.55a16.66,16.66,0,0,0,18.06-7.88,37.51,37.51,0,0,1-30.72-13,347.68,347.68,0,0,0-74.91,8.5Z"/>
-                        </g>
-                    </g>
-                </g>
-            </svg>
-            <svg class="mini-planet jupiter hide" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 521 521">
-                <defs>
-                    <style>
-                        .jupiter-color {
-                            fill: url(#linear-gradient-jupiter);
-                        }
-                    </style>
-                    <linearGradient id="linear-gradient-jupiter" x1="260.5" x2="260.5" y2="521" gradientUnits="userSpaceOnUse">
-                        <stop offset="0.05" stop-color="#cc8429"/>
-                        <stop offset="0.11" stop-color="#b16a15"/>
-                        <stop offset="0.18" stop-color="#944e00"/>
-                        <stop offset="0.27" stop-color="#a14c00"/>
-                        <stop offset="0.31" stop-color="#aa4b00"/>
-                        <stop offset="0.39" stop-color="#b45900"/>
-                        <stop offset="0.51" stop-color="#bf6a00"/>
-                        <stop offset="0.7" stop-color="#a2450d"/>
-                        <stop offset="0.78" stop-color="#bf5a00"/>
-                        <stop offset="0.87" stop-color="#bf7400"/>
-                        <stop offset="1" stop-color="#945300"/>
+                    <linearGradient id="linear-gradient-neptune" x1="260.5" x2="260.5" y2="521" gradientUnits="userSpaceOnUse">
+                        <stop offset="0" stop-color="#4c51ff"/>
+                        <stop offset="0.23" stop-color="#2699f4"/>
+                        <stop offset="0.49" stop-color="#00bee9"/>
+                        <stop offset="0.52" stop-color="#01b3e7"/>
+                        <stop offset="0.67" stop-color="#0884de"/>
+                        <stop offset="0.74" stop-color="#0a72db"/>
+                        <stop offset="0.76" stop-color="#0b77da"/>
+                        <stop offset="0.86" stop-color="#0e91d6"/>
+                        <stop offset="0.93" stop-color="#0f9ad4"/>
                     </linearGradient>
                 </defs>
-                <title>jupiter</title>
+                <title>neptune</title>
                 <g id="Layer_2" data-name="Layer 2">
-                    <g id="jupiter">
-                        <g id="jupiter-2" data-name="jupiter">
-                            <circle class="jupiter-color" cx="260.5" cy="260.5" r="260.5"/>
+                    <g id="neptune">
+                        <g id="neptune-2" data-name="neptune">
+                            <circle class="neptune-color" cx="260.5" cy="260.5" r="260.5"/>
                         </g>
                     </g>
                 </g>
             </svg>
-            <svg class="mini-planet mars hide" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 521 521">
-                <defs>
-                    <style>
-                        .mars-color {
-                            fill: url(#linear-gradient-mars);
-                        }
-                    </style>
-                    <linearGradient id="linear-gradient-mars" x1="260.5" x2="260.5" y2="521" gradientUnits="userSpaceOnUse">
-                        <stop offset="0.05" stop-color="#ff8415"/>
-                        <stop offset="0.14" stop-color="#ff752a"/>
-                        <stop offset="0.28" stop-color="#ff3615"/>
-                        <stop offset="0.32" stop-color="#ff4318"/>
-                        <stop offset="0.41" stop-color="#ff661f"/>
-                        <stop offset="0.45" stop-color="#ff7a23"/>
-                        <stop offset="0.58" stop-color="#fa5614"/>
-                        <stop offset="0.66" stop-color="#f7450d"/>
-                        <stop offset="0.78" stop-color="#f17b07"/>
-                        <stop offset="0.87" stop-color="#e9b500"/>
-                        <stop offset="1" stop-color="#f6520c"/>
-                    </linearGradient>
-                </defs>
-                <title>mars</title>
-                <g id="Layer_2" data-name="Layer 2">
-                    <g id="mars">
-                        <g id="mars-2" data-name="mars">
-                            <circle class="mars-color" cx="260.5" cy="260.5" r="260.5"/>
-                        </g>
-                    </g>
-                </g>
-            </svg>
+
+
             <svg class="arrow right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 212.31 310.58">
                 <defs>
                   <style>
