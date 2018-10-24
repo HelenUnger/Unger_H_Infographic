@@ -1,13 +1,20 @@
 *{
     margin: 0;
-    overflow: hidden;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.hide{
+body{
+    overflow: hidden;
+    width: 100vw;
+    position: fixed;
+}
+
+
+.mini-hide{
     display: none !important;
 }
+
 
 .container{
     width: 100vw;
@@ -20,14 +27,28 @@
 
 
 .planet-container{
-    width: 100vw;
+    width: 800vw;
+    display: flex;
+    position: absolute;
     margin-bottom: 30px;
+    transition: all .5s;
+}
+
+
+
+.planet-box{
+    display: block;
+    min-width: 100vw;
+    // height: 40vw;
 }
 
 .big-planet{
-    width: 60vw;
-    display: block;
-    margin: 0 auto;
+    height: 50vw;
+    margin-left: 25%;
+}
+
+.planet-box:nth-of-type(6) .big-planet{
+    margin-left: 14%;
 }
 
 .mini-menu{
@@ -40,10 +61,11 @@
 }
 
 .mini-planet{
-    height: 15vw;
-    grid-column: 2;
-    grid-row: 1;
-    margin: 0 auto;
+    // height: 15vw;
+    // grid-column: 2;
+    // grid-row: 1;
+    // margin: 0 auto;
+    display: none;
 }
 
 .arrow{
@@ -98,8 +120,9 @@ ul {
 }
 
 .info-box{
-    width: 75vw;
-    margin: 0 auto;
+    width: 80vw;
+    margin: 35vh 0 0 0;
+    float: right;
 }
 
 
@@ -112,5 +135,39 @@ ul {
 
 @media screen and (min-width: 1000px) {
 
+    .planet-box{
+        display: block;
+        min-width: 100vw;
+        height: 30vw;
+    }
     
+    .big-planet{
+        height: 20vw;
+        margin-left: 10%;
+    }
+
+    .mini-menu{
+        display: flex !important;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+    }
+
+    .mini-planet{
+        display: block;
+        height: 4vw;
+    }
+
+    .mini-planet:hover{
+        transform: scale(1.2);
+    }
+
+    .mini-hide{
+        display: block !important;
+    }
+
+
+    .arrow{
+        display: none;
+    }
+
 }
