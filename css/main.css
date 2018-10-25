@@ -48,6 +48,17 @@ body {
 .mini-planet {
   display: none; }
 
+.solar-icon {
+  height: 20vw;
+  position: absolute;
+  bottom: 15px;
+  left: 40%;
+  overflow: visible;
+  z-index: 5; }
+.solar-icon:hover {
+  transform: rotate(360deg);
+  transition: all 3s linear; }
+
 .arrow {
   height: 15vw;
   display: grid;
@@ -94,14 +105,45 @@ ul li {
   margin: 35vh 0 0 0;
   float: right; }
 
+.show {
+  display: block !important; }
+
+.solar-section {
+  width: 100vw;
+  height: 100vh;
+  background-color: #00192d;
+  position: fixed;
+  z-index: 6;
+  display: none; }
+
 @media screen and (min-width: 1000px) {
+  .planet-box:nth-of-type(6) .big-planet {
+    margin-left: 7%; }
+
+  .solar-icon {
+    height: 5vw;
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    overflow: visible; }
+  .solar-icon:hover {
+    transform: rotate(360deg);
+    transition: all 3s linear; }
+
+  .close {
+    height: 5vw;
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    overflow: visible; }
+
   .planet-box {
     display: block;
     min-width: 100vw;
     height: 30vw; }
 
   .big-planet {
-    height: 20vw;
+    height: 25vw;
     margin-left: 10%; }
 
   .mini-menu {
@@ -120,6 +162,26 @@ ul li {
     display: block !important; }
 
   .arrow {
-    display: none; } }
+    display: none; }
+
+  h1 {
+    margin: 1vw 0 3vw 0;
+    font-size: 4em; }
+
+  h3 {
+    font-size: 1.5em; }
+
+  .info-box {
+    width: 50vw;
+    margin: 4vw 0 0 0;
+    float: right; }
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0; }
+  ul li {
+    padding-top: 15px;
+    font-size: 2em; } }
 
 /*# sourceMappingURL=main.css.map */

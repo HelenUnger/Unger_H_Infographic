@@ -15,7 +15,6 @@ body{
     display: none !important;
 }
 
-
 .container{
     width: 100vw;
     height: 100vh;
@@ -61,11 +60,20 @@ body{
 }
 
 .mini-planet{
-    // height: 15vw;
-    // grid-column: 2;
-    // grid-row: 1;
-    // margin: 0 auto;
     display: none;
+}
+
+.solar-icon{
+    height: 20vw;
+    position: absolute;
+    bottom: 15px;
+    left: 40%;
+    overflow: visible;
+    z-index: 5;
+    &:hover {
+        transform: rotate(360deg);
+        transition: all 3s linear;
+    }
 }
 
 .arrow{
@@ -125,6 +133,18 @@ ul {
     float: right;
 }
 
+.show{
+    display: block !important;
+}
+
+.solar-section{
+    width: 100vw;
+    height: 100vh;
+    background-color: #00192d;
+    position: fixed;
+    z-index: 6;
+    display: none;
+}
 
 
 
@@ -132,8 +152,31 @@ ul {
 
 
 
+@media screen and (min-width: 1000px){
 
-@media screen and (min-width: 1000px) {
+    .planet-box:nth-of-type(6) .big-planet{
+        margin-left: 7%;
+    }
+
+    .solar-icon{
+        height: 5vw;
+        position: absolute;
+        top: 5%;
+        left: 5%;
+        overflow: visible;
+        &:hover {
+            transform: rotate(360deg);
+            transition: all 3s linear;
+        }
+    }
+
+    .close{
+        height: 5vw;
+        position: absolute;
+        top: 5%;
+        left: 5%;
+        overflow: visible;
+    }
 
     .planet-box{
         display: block;
@@ -142,7 +185,7 @@ ul {
     }
     
     .big-planet{
-        height: 20vw;
+        height: 25vw;
         margin-left: 10%;
     }
 
@@ -165,9 +208,33 @@ ul {
         display: block !important;
     }
 
-
     .arrow{
         display: none;
+    }
+
+    h1{
+        margin: 1vw 0 3vw 0;
+        font-size: 4em;
+    }
+
+    h3{
+        font-size: 1.5em;
+    }
+
+    .info-box{
+        width: 50vw;
+        margin: 4vw 0 0 0;
+        float: right;
+    }
+    
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        li{
+            padding-top: 15px;
+            font-size: 2em;
+        }
     }
 
 }
