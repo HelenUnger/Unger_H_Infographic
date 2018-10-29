@@ -47,7 +47,14 @@
 
     function movePlanetsMobile(){
 
-        title.innerHTML = planetAry[this.dataset.offset];
+        if (planetNum < 0){
+            planetNum = 7;
+        }else if(planetNum > 7){
+            planetNum = 0;
+        }
+
+        console.log(planetNum);
+        title.innerHTML = planetAry[planetNum];
         // allPlanets.forEach(planet => planet.classList.add('big-hide'));
         allMiniPlanets.forEach(miniPlanet => miniPlanet.classList.add('mini-hide'));
  
