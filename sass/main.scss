@@ -10,6 +10,9 @@ body{
     position: fixed;
 }
 
+.hidden{
+    display: none !important;
+}
 
 .mini-hide{
     display: none !important;
@@ -146,6 +149,53 @@ ul {
     display: none;
 }
 
+.compare{
+    max-height: 60vh;
+    width: 90vw;
+    margin: 0 auto;
+}
+
+.buttons{
+    margin-top: 5vh;
+}
+
+.size{
+    margin-top: 20vh;
+}
+
+.temperature{
+    margin-top: 5vh;
+    width: 40vw;
+}
+
+.buttons ul{
+    display: flex;
+    justify-content: space-around;
+}
+
+.buttons ul li{
+    width: 20vw;
+    display: inline-block;
+    
+}
+
+
+@keyframes turn {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+  }
+  
+  .distance {
+    margin-top: 10vh;
+    animation: turn 25s linear infinite;
+  }
+
+
+
 
 
 
@@ -171,11 +221,11 @@ ul {
     }
 
     .close{
-        height: 5vw;
         position: absolute;
         top: 5%;
         left: 5%;
         overflow: visible;
+        font-size: 3em;
     }
 
     .planet-box{
@@ -237,4 +287,46 @@ ul {
         }
     }
 
+    .compare{
+        max-height: 90vh;
+        width: 60vw;
+    }
+    
+    .buttons{
+        margin: 15vh 0 0 5vh;
+        float: left;
+    }
+    
+    .size{
+        margin-top: 20vh;
+        width: 70vw;
+        margin-right: 8vw;
+    }
+    
+    .temperature{
+        margin-top: 5vh;
+        width: 30vh;
+
+    }
+    
+    .buttons ul{
+        flex-direction: column;
+    }
+    
+    .buttons ul li{
+        width: 10vw;
+        margin: 5vh 0;
+
+    }
+
+}
+
+@media screen and (min-width: 1300px){
+    .buttons ul li{
+        width: 7vw;
+    }
+
+    .distance{
+        width: 40vw;
+    }
 }
