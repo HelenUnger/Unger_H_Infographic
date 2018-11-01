@@ -214,8 +214,7 @@ ul {
 
 .buttons ul li{
     width: 20vw;
-    display: inline-block;
-    
+    display: inline-block;  
 }
 
 
@@ -240,8 +239,49 @@ ul {
         font-size: 2em;
     }
 
+    .mini-menu{
+        height: 10vw;
+    }
+
+    .arrow{
+        width: 5vw;
+    }
+
+    .solar-icon{
+        height: 10vw;
+        left: 45%;
+    }
+
+    .big-planet{
+        width: 70vw;
+        margin-left: 15%;
+    }
+
+    .compare{
+        width: 70vw;
+        margin: 0 auto;
+    }
+
+    .distance{
+        margin-top: 8vh;
+    }
+    
+    .buttons{
+        margin-top: 5vh;
+    }
+    
+    .size{
+        margin-top: 20vh;
+        width: 90vw;
+    }
+    
     .temperature{
-        width: 30vw;
+        margin-top: 5vh;
+        width: 35vw;
+    }
+    
+    .buttons ul li{
+        width: 10vw;
     }
 }
 
@@ -253,7 +293,7 @@ ul {
 @media screen and (min-width: 1000px){
 
     .planet-box:nth-of-type(6) .big-planet{
-        margin-left: 7%;
+        margin-left: -13%;
     }
 
     .solar-icon{
@@ -283,13 +323,14 @@ ul {
     
     .big-planet{
         height: 25vw;
-        margin-left: 10%;
+        margin-left: -10%;
     }
 
     .mini-menu{
         display: flex !important;
         flex-wrap: nowrap;
         justify-content: space-around;
+        height: 5vw;
     }
 
     .mini-planet{
@@ -321,6 +362,7 @@ ul {
     .info-box{
         width: 55vw;
         padding: 0;
+        font-size: 1em;
         float: right;
         text-align: left;
     }
@@ -384,13 +426,6 @@ ul {
 }
 
 @media screen and (min-width: 2000px){
-    // .buttons ul li{
-    //     width: 7vw;
-    // }
-
-    // .distance{
-    //     width: 40vw;
-    // }
 
     h1{
         font-size: 7em;
