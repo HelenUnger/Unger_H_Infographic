@@ -1,7 +1,10 @@
 // import all of the required plugins / packages
 var gulp = require('gulp');
 var sass = require('gulp-sass');
-var browserSync = require('browser-sync').create();
+
+gulp.task('default', function(){
+    console.log('gulp works');
+});
 
 // start writing your tasks
 // serve the page with browsersync

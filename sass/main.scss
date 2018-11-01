@@ -96,15 +96,15 @@ body{
     grid-row: 1; 
 }
 
-h1, h2{
+h1{
     text-transform: uppercase;
-    font-size: 4em;
+    font-size: 3em;
     text-align: center;
+    padding: 30px 0;
 }
 
-h1{
-    font-size: 3em;
-    padding: 30px 0;
+h3{
+    font-size: 1.5em;
 }
 
 p{
@@ -131,9 +131,10 @@ ul {
 }
 
 .info-box{
-    width: 80vw;
-    margin: 35vh 0 0 0;
-    float: right;
+    width: 90vw;
+    padding-top: 30vh;
+    margin: 0 auto;
+    text-align: center;
 }
 
 .show{
@@ -268,13 +269,14 @@ ul {
     }
 
     h3{
-        font-size: 1.5em;
+        font-size: 1.6em;
     }
 
     .info-box{
-        width: 50vw;
-        margin: 4vw 0 0 0;
+        width: 55vw;
+        padding: 0;
         float: right;
+        text-align: left;
     }
     
     ul {
@@ -283,7 +285,7 @@ ul {
         padding: 0;
         li{
             padding-top: 15px;
-            font-size: 2em;
+            font-size: 1.8em;
         }
     }
 
@@ -328,5 +330,27 @@ ul {
 
     .distance{
         width: 40vw;
+    }
+}
+
+@media screen and (min-width: 2000px){
+    // .buttons ul li{
+    //     width: 7vw;
+    // }
+
+    // .distance{
+    //     width: 40vw;
+    // }
+
+    h1{
+        font-size: 7em;
+    }
+
+    h3{
+        font-size: 2em;
+    }
+
+    .info-box ul li{
+      font-size: 3em;  
     }
 }
