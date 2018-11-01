@@ -79,6 +79,44 @@ body{
     }
 }
 
+.close{
+    position: absolute;
+    top: 1%;
+    left: 3%;
+    font-size: 1.4em;
+}
+
+.temp-bar{
+    fill: #fff;
+}
+
+.temperature svg{
+    #mercury:hover ~ .temp-bar{
+    transform: scaleY(1.49);
+    }
+    #earth:hover ~ .temp-bar{
+    transform: scaleY(3.52);
+    }
+    #mars:hover ~ .temp-bar{
+    transform: scaleY(4);
+    }
+    #jupiter:hover ~ .temp-bar{
+    transform: scaleY(4.9);
+    }
+    #saturn1:hover ~ .temp-bar, #saturn2:hover ~ .temp-bar{
+    transform: scaleY(5.25);
+    }
+    #uranus:hover ~ .temp-bar{
+    transform: scaleY(5.91);
+    }
+    #neptune:hover ~ .temp-bar{
+    transform: scaleY(5.97);
+    }
+}
+
+
+
+
 .arrow{
     height: 15vw;
     display: grid;
@@ -196,7 +234,16 @@ ul {
   }
 
 
+@media screen and(min-width:700px){
+    .info-box{
+        padding-top: 40vh;
+        font-size: 2em;
+    }
 
+    .temperature{
+        width: 30vw;
+    }
+}
 
 
 
@@ -225,7 +272,6 @@ ul {
         position: absolute;
         top: 5%;
         left: 5%;
-        overflow: visible;
         font-size: 3em;
     }
 
@@ -330,6 +376,10 @@ ul {
 
     .distance{
         width: 40vw;
+    }
+
+    .info-box{
+        width: 50vw;
     }
 }
 

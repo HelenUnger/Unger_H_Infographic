@@ -76,14 +76,13 @@
         }else if (this.id == 'tempButton'){
             tempGraph.classList.remove('hidden');
         }else{
-            console.log('whoops');
+            console.log('theres an error with something in the lightbox');
         }
     }
 
 
     function fetchData(planetNum=null) {
         if (window.matchMedia("(min-width: 1000px)").matches){
-            console.log('huh?');
             fetch(`./includes/connect.php?planet=${this.id}`)
             .then(res => res.json())
             .then(data => {
@@ -94,7 +93,6 @@
             console.error(error);
         });
         }else{
-            console.log('excuse me?');
             fetch(`./includes/connect.php?planet=${planetNum}`)
             .then(res => res.json())
             .then(data => {
