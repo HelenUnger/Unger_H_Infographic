@@ -11,52 +11,49 @@
             title = document.querySelector('h1'),
             planetData = document.querySelectorAll('.data');
             allMiniPlanets = document.querySelectorAll('.mini-planet'),
-            distBtn = document.querySelector('.distButton'),
-            sizeBtn = document.querySelector('.sizeButton'),
-            tempBtn = document.querySelector('.tempButton'),
+            btn = document.querySelectorAll('.button'),
             distGraph = document.querySelector('.distance'),
             sizeGraph = document.querySelector('.size'),
             tempGraph = document.querySelector('.temperature'),
             allGraphs = document.querySelectorAll('.compare');
 
-    var planetNum = 0;
-    var planetAry = ['mercury', 'venus', 'earth', 'mars', 'jupiter', 'saturn', 'uranus', 'neptune'];
+    var planetNum = 1;
+    // var planetAry = ['mercury', 'venus', 'earth', 'mars', 'jupiter', 'saturn', 'uranus', 'neptune'];
 
     function init(){
         if (window.matchMedia("(min-width: 1000px)").matches) {
             //desktop
             console.log('desktop');
-            // movePlanetsDesktop();
 
         }else{
             //mobile
             console.log('mobile');
             movePlanetsMobile();
-            // allMiniPlanets.forEach(miniPlanet => miniPlanet.classList.add('mini-hide'));
         }
     }
 
     function movePlanetsMobile(){
 
-        if (planetNum < 0){
-            planetNum = 7;
-        }else if(planetNum > 7){
-            planetNum = 0;
+        if (planetNum < 1){
+            planetNum = 8;
+        }else if(planetNum > 8){
+            planetNum = 1;
         }
 
         console.log(planetNum);
-        title.innerHTML = planetAry[planetNum];
+        // title.innerHTML = planetAry[planetNum];
         // allPlanets.forEach(planet => planet.classList.add('big-hide'));
         allMiniPlanets.forEach(miniPlanet => miniPlanet.classList.add('mini-hide'));
  
         console.log('mobile');
-        planetCont.style.left = ( planetNum * -100) + "vw";
+        planetCont.style.left = ((planetNum - 1) * -100) + "vw";
+        fetchData(planetNum);
 
     }
 
     function movePlanetsDesktop(){
         console.log(this);
-        title.innerHTML = planetAry[this.dataset.offset];
+        // title.innerHTML = planetAry[this.dataset.offset];
         planetCont.style.left = (this.dataset.offset * -100) + "vw";
     }
 
@@ -70,12 +67,13 @@
     }
 
     function changeGraph(){
+        console.log(this.id);
         allGraphs.forEach(graph => graph.classList.add('hidden'));
-        if (this.classList == 'distButton'){
+        if (this.id == 'distButton'){
             distGraph.classList.remove('hidden');
-        }else if (this.classList == 'sizeButton'){
+        }else if (this.id == 'sizeButton'){
             sizeGraph.classList.remove('hidden');
-        }else if (this.classList == 'tempButton'){
+        }else if (this.id == 'tempButton'){
             tempGraph.classList.remove('hidden');
         }else{
             console.log('whoops');
@@ -83,28 +81,43 @@
     }
 
 
-    function fetchData() {
-        fetch(`./includes/connect.php?planet=${this.id}`)
-        .then(res => res.json())
-        .then(data => {
+    function fetchData(planetNum=null) {
+        if (window.matchMedia("(min-width: 1000px)").matches){
+            console.log('huh?');
+            fetch(`./includes/connect.php?planet=${this.id}`)
+            .then(res => res.json())
+            .then(data => {
             console.log(data);
             parsePlanetData(data[0]);
         })
-        .catch(function(error) {
+            .catch(function(error) {
             console.error(error);
         });
+        }else{
+            console.log('excuse me?');
+            fetch(`./includes/connect.php?planet=${planetNum}`)
+            .then(res => res.json())
+            .then(data => {
+            console.log(data);
+            parsePlanetData(data[0]);
+        })
+            .catch(function(error) {
+            console.error(error);
+        });
+        }       
     }
 
     function parsePlanetData(planet) {
+        console.log(planet);
         // destructure the database info and grab just what we need
-        const { planet_name, planet_tag, planet_year, planet_distance, planet_moons, planet_type } = planet
+        const { planet_id, planet_name, planet_tag, planet_year, planet_distance, planet_moons, planet_type } = planet
         // take the database data and put it on the page
-        title.textContent = planet_name;
-        planetData[0].textContent = planet_tag;
-        planetData[1].textContent = planet_year;
-        planetData[2].textContent = planet_distance;
-        planetData[3].textContent = planet_moons;
-        planetData[4].textContent = planet_type;
+        title.innerHTML = planet_name;
+        planetData[0].innerHTML = planet_tag;
+        planetData[1].innerHTML = planet_year;
+        planetData[2].innerHTML = planet_distance;
+        planetData[3].innerHTML = planet_moons;
+        planetData[4].innerHTML = planet_type;
 
     };
 
@@ -113,9 +126,7 @@
 
     init();
 
-    distBtn.addEventListener('click', changeGraph);
-    tempBtn.addEventListener('click', changeGraph);
-    sizeBtn.addEventListener('click', changeGraph);
+    btn.forEach(button => button.addEventListener('click', changeGraph));
 
     closeBtn.addEventListener('click', closeSolar);
     solarBtn.addEventListener('click', openSolar);

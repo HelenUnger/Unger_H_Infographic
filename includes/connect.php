@@ -9,7 +9,7 @@ if (!$conn) {
     echo "connection didn't work...";
     exit;
 }
-echo "connected!";
+//echo "connected!";
 // get all the car data
 // $myQuery = "SELECT * FROM mainmodel";
 // // make the query, get the result
@@ -26,7 +26,8 @@ if (isset($_GET["planet"])) {// check for a parameter ?planet=1
     while($row = mysqli_fetch_assoc($result)) {
         $rows[] = $row;
     }
+    echo json_encode($rows);
 }
 // send the entire result set as a json encoded array
-echo json_encode($rows);
+// echo json_encode($rows);
 ?>
